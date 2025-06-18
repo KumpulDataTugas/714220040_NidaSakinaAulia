@@ -1,0 +1,9 @@
+Dalam ekosistem bahasa pemrograman Rust, terdapat dua jenis proyek utama yang dapat dibuat oleh pengembang, yaitu proyek binari (binary) dan proyek pustaka (library). Perbedaan antara keduanya terletak pada tujuan penggunaan dan struktur berkas utama dalam proyek tersebut.
+
+Proyek binari adalah jenis proyek Rust yang memiliki titik masuk utama berupa fungsi main(). Proyek ini menghasilkan file executable (.exe pada Windows, atau binary di Unix-like) yang dapat dijalankan secara langsung. File utama dalam proyek binari adalah src/main.rs, yang berisi seluruh logika program yang akan dijalankan. Proyek ini sangat cocok untuk aplikasi yang berdiri sendiri, seperti command-line interface (CLI), game, atau server web.
+
+Sebaliknya, proyek pustaka (library) merupakan proyek yang ditujukan untuk diekspor dan digunakan kembali oleh proyek Rust lainnya. Proyek ini tidak memiliki fungsi main(), tetapi mendefinisikan fungsi-fungsi atau modul-modul yang dapat dipanggil oleh crate lain. Berkas utama dalam proyek pustaka adalah src/lib.rs. Proyek library sangat penting untuk membuat kode yang bersifat reusable, modular, dan dapat dipublikasikan ke crates.io.
+
+Dari segi struktur, proyek binari memiliki deklarasi pada [package] di Cargo.toml, sedangkan pustaka memiliki tambahan [lib] apabila konfigurasi tambahan diperlukan, seperti menentukan path khusus untuk pustaka. Proyek juga bisa memiliki keduanya, yaitu main.rs untuk binary dan lib.rs untuk pustaka, jika pengembang ingin membuat executable sekaligus crate yang bisa digunakan kembali.
+
+Dengan demikian, perbedaan utama terletak pada tujuan (diekseskusi vs digunakan kembali), struktur file utama (main.rs vs lib.rs), dan hasil akhir (executable vs crate). Keduanya merupakan bagian penting dalam pengembangan aplikasi Rust yang berskala kecil maupun besar.

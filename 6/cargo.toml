@@ -1,0 +1,10 @@
+[package]
+name = "hello_publish"         # harus unik, belum dipakai di crates.io
+version = "0.1.0"
+edition = "2021"
+description = "Crate percobaan publikasi"
+license = "MIT"
+repository = "https://github.com/Nidasakinaa/project"  # opsional
+readme = "README.md"
+
+[dependencies]

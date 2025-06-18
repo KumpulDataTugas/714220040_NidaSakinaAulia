@@ -1,0 +1,1 @@
+C:\Semester\ 6\Kecerdasan\ Buatan\714220040_NidaSakinaAulia\4\target\debug\modular_project.exe: C:\Semester\ 6\Kecerdasan\ Buatan\714220040_NidaSakinaAulia\4\src\main.rs C:\Semester\ 6\Kecerdasan\ Buatan\714220040_NidaSakinaAulia\4\src\utils.rs
